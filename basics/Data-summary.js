@@ -37,8 +37,19 @@ const myFunction = function(){
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
 
+// Stack (Primitive Data Types) vs Heap (Reference Data Types)
+
 let a = 25
 let b = a
-b = 30
-console.log(a, b);
+b = 30 
+// console.log(a, b);
+
+let obj1 = {
+    fname: "tejas",
+    age : 22
+}
+
+let obj2 = obj1 
+obj2.fname = "baklol"
+console.log(obj1.fname, obj2.fname);
 
